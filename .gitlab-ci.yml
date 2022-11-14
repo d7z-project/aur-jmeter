@@ -1,13 +1,16 @@
 image: "registry.d7z.net/public/archlinux:base-devel"
 
 build:
+  cache:
+    paths:
+      - "*.tgz"
   before_script:
     - pacman -Syy
     - chown -Rv builder "$(pwd)"
     - mkdir public
   script:
     - su - builder -c "cd $(pwd);makepkg -sf --noconfirm"
-    - cp *.zst public
+    - cp *.zst public/jmeter.pkg.tar.zst
   artifacts:
     paths:
       - public
