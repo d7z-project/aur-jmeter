@@ -1,0 +1,13 @@
+= Jmeter Aur
+
+> 此项目克隆于 https://aur.archlinux.org/packages/jmeter
+
+使用如下命令测试、编译、提交：
+
+[source,bash]
+----
+makepkg -sif
+makepkg --printsrcinfo > .SRCINFO
+----
+
+
