@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+  <mime-type type="application/x-jmeter">
+    <icon name="jmeter"/>
+    <comment>Jmeter Project</comment>
+    <comment xml:lang="zh_CN">Jmeter测试用例</comment>
+    <glob pattern="*.jmx"/>
+  </mime-type>
+</mime-info>

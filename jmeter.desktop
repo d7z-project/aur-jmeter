@@ -2,8 +2,11 @@
 Type=Application
 Name=JMeter
 Comment=Load test Java functional behavior and measure performance
+Comment[zh_CN]=基于 Java 实现的压力测试和性能测试工具
 Terminal=false
-Exec=/usr/bin/jmeter
+Exec=/usr/bin/jmeter-desktop %U
+Icon=jmeter
+MimeType=application/x-jmeter
 Categories=Development;WebDevelopment;Utility;
 StartupNotify=true
 StartupWMClass=jmeter
